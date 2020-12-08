@@ -1,0 +1,19 @@
+.buttons {
+  color: #304050;
+
+  &__title {
+    font-size: 2.125rem;
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 22px;
+  }
+}

@@ -1,0 +1,27 @@
+.button {
+  margin-right: 1.875rem;
+  font-size: 0.9375rem;
+
+  color: $white;
+  background-color: $green;
+
+  &_hover {
+    background-color: $greenHover;
+  }
+
+  &_disabled {
+    background-color: $gray-300;
+  }
+
+  &_normal {
+    color: $green;
+    background-color: transparent;
+    border: 1px solid $green;
+  }
+
+  &_disabledOpacity {
+    color: $gray-300;
+    border: 1px solid $gray-300;
+    background-color: transparent;
+  }
+}

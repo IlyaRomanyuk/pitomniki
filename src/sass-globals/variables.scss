@@ -1,3 +1,61 @@
+$spacer: 1rem !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+$headings-margin-bottom: $spacer * 1.25 !default;
+
+$h1-font-size: $font-size-base * 2.1875 !default;
+$h2-font-size: $font-size-base * 1.875 !default;
+$h3-font-size: $font-size-base * 1.625 !default;
+$h4-font-size: $font-size-base * 1.375 !default;
+
+/*Colors*/
+$greenHover: #55B179 !default;
+$green: #5EC587 !default;
+$cyan: #2A8989 !default;
+$gray-900: #304050 !default;
+$gray-600: #596673 !default;
+$gray-500: #838C96 !default;
+$gray-400: #C1C6CB !default;
+$gray-300: #C1C6CB !default;
+$gray-200: #F0F7F7 !default;
+$gray-100: #EAECED !default;
+
+/*Buttons*/
+$btn-padding-y: .8125rem !default;
+$btn-padding-x: 2rem !default;
+
+$btn-padding-y-lg: 1rem !default;
+$btn-padding-x-lg: 1.875rem !default;
+
+$grid-breakpoints: (
+        sm: 0,
+        md: 778px,
+        lg: 1230px
+
+) !default;
+
+$container-max-widths: (
+        md: 744px,
+        lg: 1200px
+) !default;
+
+$spacers: () !default;
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: ($spacer * .25),
+                        2: ($spacer * .5),
+                        3: $spacer,
+                        4: ($spacer * 1.5),
+                        5: ($spacer * 3),
+                        30: ($spacer * 1.875),
+                        60: ($spacer * 3.75),
+                        64: ($spacer * 4),
+                        84: ($spacer * 5.25)
+                ),
+                $spacers
+);
+
 // Теперь переопределенные переменные должны содержать ключевое слово !default;
 @import "../blocks.01-base/fi/variables";
 @import "~bootstrap/scss/variables";

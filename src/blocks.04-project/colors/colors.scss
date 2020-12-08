@@ -1,0 +1,65 @@
+@mixin req {
+  width: 112px;
+  height: 112px;
+  border-radius: 3px;
+}
+
+.colors {
+  &__title {
+    font-size: 2.1875rem;
+    color: #304050;
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    &1 {
+      @include req;
+      background-color: $green;
+    }
+
+    &2 {
+      @include req;
+      background-color: $cyan;
+    }
+
+    &3 {
+      @include req;
+      background-color: $gray-900;
+    }
+
+    &4 {
+      @include req;
+      background-color: $gray-600;
+    }
+
+    &5 {
+      @include req;
+      background-color: $gray-500;
+    }
+
+    &6 {
+      @include req;
+      background-color: $gray-400;
+    }
+
+    &7 {
+      @include req;
+      background-color: $gray-300;
+    }
+
+    &8 {
+      @include req;
+      background-color: $gray-200;
+    }
+
+    &9 {
+      @include req;
+      background-color: $gray-100;
+    }
+  }
+}
